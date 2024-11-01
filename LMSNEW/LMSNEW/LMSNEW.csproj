@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D68E6DD2-F23F-49D5-A81B-D6B2B1BBF9B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMSNEW</RootNamespace>
+    <AssemblyName>LMSNEW</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Interface.Designer.cs">
+      <DependentUpon>Admin_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_interface_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_interface_.Designer.cs">
+      <DependentUpon>Admin_interface_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Interface_2.cs" />
+    <Compile Include="Admin_Moderation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Moderation.Designer.cs">
+      <DependentUpon>Admin_Moderation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_requests_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_requests_.Designer.cs">
+      <DependentUpon>Admin_requests_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Requests_2.cs" />
+    <Compile Include="Book_Collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Collection.Designer.cs">
+      <DependentUpon>Book_Collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_History.Designer.cs">
+      <DependentUpon>Book_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Record.Designer.cs">
+      <DependentUpon>Book_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lms4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lms4DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lms4DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lms4DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_interface.Designer.cs">
+      <DependentUpon>Moderator_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_Interface_2.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Record.Designer.cs">
+      <DependentUpon>Staff_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Record.Designer.cs">
+      <DependentUpon>Student_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_interface.Designer.cs">
+      <DependentUpon>User_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Interface_2.cs" />
+    <EmbeddedResource Include="Admin_Interface.resx">
+      <DependentUpon>Admin_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_interface_.resx">
+      <DependentUpon>Admin_interface_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Moderation.resx">
+      <DependentUpon>Admin_Moderation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_requests_.resx">
+      <DependentUpon>Admin_requests_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Collection.resx">
+      <DependentUpon>Book_Collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_History.resx">
+      <DependentUpon>Book_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Record.resx">
+      <DependentUpon>Book_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_interface.resx">
+      <DependentUpon>Moderator_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Record.resx">
+      <DependentUpon>Staff_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Record.resx">
+      <DependentUpon>Student_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_interface.resx">
+      <DependentUpon>User_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LibDataSet.xsc">
+      <DependentUpon>LibDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibDataSet.xss">
+      <DependentUpon>LibDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lms4DataSet.xsc">
+      <DependentUpon>lms4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lms4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lms4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lms4DataSet.xss">
+      <DependentUpon>lms4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lms4DataSet1.xsc">
+      <DependentUpon>lms4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="lms4DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lms4DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lms4DataSet1.xss">
+      <DependentUpon>lms4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
